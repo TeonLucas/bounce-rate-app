@@ -1,0 +1,33 @@
+{
+    "schemaType": "VISUALIZATION",
+    "id": "bounce-rate-viz",
+    "displayName": "BounceRateViz",
+    "description": "",
+    "configuration": [
+        {
+            "name": "accountId",
+            "title": "Account ID",
+            "description": "Account ID to query.",
+            "type": "account-id"
+        },
+        {
+            "name": "queryInterval",
+            "title": "Query Interval",
+            "description": "How often to query the bounce rate in a given timerange.",
+            "type": "enum",
+            "items": [
+                {"title": "Select...", "value": 0},
+                {"title": "1 day", "value": 1440},
+                {"title": "12 hours", "value": 720},
+                {"title": "6 hours", "value": 360},
+                {"title": "4 hours", "value": 240},
+                {"title": "2 hours", "value": 120},
+                {"title": "1 hour", "value": 60},
+                {"title": "30 minutes", "value": 30},
+                {"title": "15 minutes", "value": 15},
+                {"title": "10 minutes", "value": 10},
+                {"title": "1 minute", "value": 1}
+            ]
+        }
+    ]
+}
