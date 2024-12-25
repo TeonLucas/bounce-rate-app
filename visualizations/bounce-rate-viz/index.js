@@ -200,7 +200,7 @@ export default class BounceRateVisualization extends React.Component {
                     id: 'app-' + (index+1).toString(),
                     name: app.appName,
                     viz: 'main',
-                    color: this.pallette[index],
+                    color: this.pallette[index % 15],
                     units_data: {x: 'TIMESTAMP'},
                 }, data: new Array(queries)});
                 index++;
